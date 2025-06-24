@@ -21,7 +21,7 @@ container.forEach(element =>{
 })
 
 // Capturar cuadros colores
-const botones = document.querySelectorAll(".button");
+const botones = document.querySelectorAll(".buttonColors");
 
 // Definir colores
 const colores = ["red", "green", "blue", "white"];
@@ -39,4 +39,30 @@ botones.forEach((element, index) => {
 function backgroundColorChange(color) {
   body.style.backgroundColor = color;
 }
+
+// Capturar contador
+const contador = document.querySelector('#counter')
+const contadorChangers = document.querySelectorAll('.counterButton');
+
+// Funciones variar contador
+function increaseFunction(){
+    contador.textContent++;
+    console.log(contador.textContent);
+}
+
+function decreaseFunction(){
+    contador.textContent--;
+    console.log(contador.textContent);
+}
+
+// Capturar botones
+const increaseButton = document.querySelector('#increase');
+const decreaseButton = document.querySelector('#decrease');
+
+// Definir acción
+increaseButton.onclick = function(){increaseFunction()};
+decreaseButton.onclick = function(){decreaseFunction()};
+
+
+
 
