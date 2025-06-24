@@ -7,8 +7,27 @@
     <title>Manipulación de DOM</title>
 </head>
 
-<body>
-    <h1>Práctica de Manipulación de DOM</h1>
+<body id="body">
+    <h1 id="page__title">DOM Practice</h1>
+    <h2>1. Background colors, applying CSS Style through javascript</h2>
+    <div class="container" id="container__background--color">
+        <p>Click on any of the colored square buttons. The page will have the same background color as the button's</p>
+        <div class="container">
+            <button type="button" class="button" id="red"></button>
+            <button type="button" class="button" id="green"></button>
+            <button type="button" class="button" id="blue"></button>
+            <button type="button" class="button" id="white"></button>
+        </div>
+        <ul>
+            <li>Saved 'body' into a variable through querySelector</li>
+            <li>Saved all '.button' elements into a NodeList through querySelectorAll</li>
+            <li>Saved a list of colors in a list</li>
+            <li>Used a forEach on the NodeList of buttons, applying style such as dimensions, background color, and more
+                importantly, the 'onclick' property to turn 'body's background color to its own color.</li>
+        </ul>
+    </div>
+
+    <div class="container"></div>
 
     <script src="assets/script.js"></script>
 </body>
